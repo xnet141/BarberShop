@@ -1,0 +1,22 @@
+
+email: xnet@bk.ru, message:   #   Вопрос по placeholder в <textarea>
+  # <br>
+email: xnet@bk.ru, message: <br>
+email: mail@mail.ru, message: dasdasdas<br>
+email: mail@mail.ru, message: dasdasdas<br>
+email: mail@mail.ru, message: dasdasdas<br>
+email: mail@mail.ru, message: dasdasdas<br>
+email: mail@mail.ru, message: dasdasdas<br>
+email: mail@mail.ru, message: dasdasdas<br>
+email: mail@mail.ru, message: dasdasdas<br>
+email: mail@mail.ru, message: dasdasdas<br>
+email: mail@mail.ru, message: dasdasdas<br>
+email: mail@mail.ru, message: dasdasdas<br>
+email: mail@mail.ru, message: dasdasdas<br>
+email: mh101@ya.ru, message: fffffffffffffffffffffffffffffffff<br>
+email: mh101@ya.ru, message: fffffffffffffffffffffffffffffffff<br>
+email: mh101@ya.ru, message: fffffffffffffffffffffffffffffffff<br>
+email: , message: <br>
+email: , message: <br>
+email: , message: <br>
+email: dasd, message: dad<br>
