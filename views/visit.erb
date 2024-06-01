@@ -31,10 +31,9 @@
   <div class="form-group">
     <label>Ваш парикмахер:</label>
   <select name="barber" id="barber-select" class="form-control">  #class="form-select"
-    <option value="">--Выберите парикмахера--</option>
-    <option value="Walter White">Walter White</option>
-    <option value="Jessie!!! Pinkman ">Jessie Pinkman</option>
-    <option value="Gus Fring">Gus Fring</option>
+    <option <%= @barber == 'Jessie Pinkman' ? 'selected' : '' %> value="Jessie Pinkman ">Jessie Pinkman</option>
+    <option <%= @barber == 'Walter White' ? 'selected' : '' %> value="Walter White">Walter White</option>
+    <option <%= @barber == 'Gus Fring' ? 'selected' : '' %> value="Gus Fring">Gus Fring</option>
   </select>
   </div>
 
