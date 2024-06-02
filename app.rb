@@ -47,7 +47,9 @@ get '/cont' do
 	haml :cont
 end
 
-
+get '/showusers' do
+	erb "Hello world"
+end
 
 post '/contacts' do
 	require 'pony'
@@ -144,6 +146,8 @@ post '/login' do
 end
 
 def get_db
-	return SQLite3::Database.new 'barbershop.db'
+	db = SQLite3::Database.new 'barbershop.db'
+	db.results_as_hash = true
+	return db
 end
 
