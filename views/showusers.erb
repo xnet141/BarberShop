@@ -1,0 +1,27 @@
+<table class='table'>
+	<thead>
+		<tr>
+			<th>Имя</th>
+			<th>Имя</th>
+			<th>Имя</th>
+			<th>Имя</th>
+			<th>Имя</th>
+		</tr>
+	</thead>
+
+	<body> #ctrl + enter - переход в начало следующей строки
+		<% @results.each do |row| %>
+			<tr>
+				<td><%= row['username'] %></td>
+				<td><%= row['phone'] %></td>
+				<td><%= row['datestamp'] %></td>
+				<td><%= row['barber'] %></td>
+				<td><%= row['color'] %></td>
+			</tr>
+		<% end %>
+	</body>
+</table>
+
+
+
+
