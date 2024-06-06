@@ -30,12 +30,16 @@
     <input id="datetimepicker" name='datetime' type="text" class="form-control"  placeholder='Введите дату и время' value="<%= @datetime %>">
   </div>
 
+<%# #class="form-select" %>
+  
   <div class="form-group">
     <label>Ваш парикмахер:</label>
-  <select name="barber" id="barber-select" class="form-control">  #class="form-select"
-    <option <%= @barber == 'Jessie Pinkman' ? 'selected' : '' %> value="Jessie Pinkman ">Jessie Pinkman</option>
-    <option <%= @barber == 'Walter White' ? 'selected' : '' %> value="Walter White">Walter White</option>
-    <option <%= @barber == 'Gus Fring' ? 'selected' : '' %> value="Gus Fring">Gus Fring</option>
+  <select name="barber" class="form-control">
+ 
+      <% @barbers.each do |item| %> 
+        <option <%= @barber == item['name'] ? 'selected' : '' %>><%= item['name'] %></option> 
+      <% end %>
+      
   </select>
   </div>
 

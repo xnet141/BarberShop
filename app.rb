@@ -24,6 +24,11 @@ def get_db
 	return db
 end
 
+before do
+	db = get_db
+	@barbers = db.execute 'select * from Barbers'
+end
+
 configure do
 	db = get_db
 	db.execute 'CREATE TABLE IF NOT EXISTS 
@@ -60,9 +65,6 @@ get '/contacts' do
 	erb :contacts
 end
 
-get '/visit' do
-	erb :visit
-end
 
 get '/something' do
 	erb :something
@@ -76,7 +78,9 @@ get '/cont' do
 	haml :cont
 end
 
-
+get '/visit' do
+	erb :visit
+end
 
 post '/contacts' do
 	require 'pony'
@@ -133,7 +137,7 @@ post '/visit' do
 	@datetime = params[:datetime]
 	@barber = params[:barber]
 	@color = params[:color]
-	
+
 	# хеш
 	hh = {  :username => 'Введите имя!!',
 			:phone => 'Введите телефон',
@@ -162,6 +166,8 @@ post '/visit' do
 
 end
 
+
+
 post '/login' do
 	@userlogin = params[:userlogin]
 	@password = params[:password]
@@ -179,6 +185,9 @@ get '/showusers' do
 
 	erb :showusers
 end
+
+
+
 
 
 
